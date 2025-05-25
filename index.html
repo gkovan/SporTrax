@@ -1,64 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SporTrax – Apple Watch Tennis Tracker</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 2rem auto;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SporTrax – Apple Watch Tennis Tracker</title>
+<style>
+  :root {
+    --bg-color: #f0f2f5;
+    --text-color: #333;
+    --main-bg: #fff;
+    --box-shadow: rgba(0,0,0,0.1);
+    --h1-color: #004aad;
+    --h2-color: #0066cc;
+    --link-color: #0066cc;
+    --border-color: #e0e0e0;
+  }
+
+  [data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ddd;
+    --main-bg: #1e1e1e;
+    --box-shadow: rgba(0,0,0,0.5);
+    --h1-color: #66b2ff;
+    --h2-color: #80cfff;
+    --link-color: #80cfff;
+    --border-color: #333;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: var(--main-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--box-shadow);
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: var(--h1-color);
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    color: var(--h2-color);
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    line-height: 1.6;
+  }
+
+  a {
+    color: var(--link-color);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px var(--box-shadow);
+    transition: box-shadow 0.3s;
+  }
+
+  .feature {
+    border-top: 2px solid var(--border-color);
+    padding-top: 1rem;
+    margin-top: 2rem;
+  }
+
+  .feature:first-of-type {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  /* Dark Mode Toggle Button */
+  .toggle-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
+
+  .toggle-button {
+    cursor: pointer;
+    background: none;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+  }
+
+  .toggle-button:hover {
+    background: rgba(0,0,0,0.05);
+  }
+
+  @media (max-width: 600px) {
+    main {
+      margin: 1rem;
       padding: 1rem;
-      background-color: #f4f4f4;
-      color: #333;
     }
-    h1, h2 {
-      color: #0066cc;
+
+    h1 {
+      font-size: 1.5rem;
     }
-    img {
-      max-width: 100%;
-      height: auto;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      margin: 1rem 0;
+
+    h2 {
+      font-size: 1.1rem;
     }
-    .feature {
-      background: #fff;
-      padding: 1rem;
-      border-radius: 10px;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
 
-  <h1>SporTrax – Track Your Tennis Game on Apple Watch</h1>
+<main>
+  <div class="toggle-container">
+    <button id="toggle-theme" class="toggle-button">🌙 Dark Mode</button>
+  </div>
 
-  <p><strong>SporTrax</strong> is a powerful yet simple app built for Apple Watch that helps you keep score during tennis matches — no phone needed! Whether you're casually playing or in a serious match, SporTrax keeps you focused and in control.</p>
+  <h1>SporTrax – Track Your Tennis Game on Apple Watch</h1>
+  <p><strong>SporTrax</strong> is a simple and powerful Apple Watch app that lets you keep score during tennis matches — no phone needed! Stay focused and in control whether you're playing casually or competitively.</p>
 
   <div class="feature">
     <h2>🎾 Core Features</h2>
     <ul>
       <li>Track <strong>points, games, sets, and matches</strong> in real time</li>
       <li>Quickly <strong>undo the last point</strong> if needed</li>
-      <li>Automatic <strong>serve indicator</strong> so you never lose track</li>
+      <li>Automatic <strong>serve indicator</strong> to keep you on track</li>
       <li>Designed exclusively for the <strong>Apple Watch</strong> — intuitive and lightweight</li>
     </ul>
   </div>
 
   <div class="feature">
     <h2>📱 App Interface</h2>
-    <p>Navigate easily between sports and mini games. Here's a glimpse at the user-friendly UI:</p>
+    <p>Navigate easily between sports and mini-games. Here’s a peek at the user-friendly UI:</p>
     <img src="SporTrax-main-menu.PNG" alt="SporTrax Main Menu on Apple Watch" />
     <img src="SporTrax-mini-games.PNG" alt="SporTrax Mini Games View" />
   </div>
 
   <div class="feature">
-    <h2>↩️ Tennis game mode</h2>
+    <h2>🎾 Tennis Game Mode</h2>
     <p>Keep track of your tennis match score point by point.</p>
-    <img src="SporTrax-tennis-view.PNG" alt="Undo Point Feature on Apple Watch" />
+    <img src="SporTrax-tennis-view.PNG" alt="Tennis Game Mode on Apple Watch" />
   </div>
 
   <div class="feature">
@@ -69,13 +178,41 @@
 
   <div class="feature">
     <h2>📧 Support</h2>
-    <p>Need help or have feedback? Contact us at <a href="mailto:sportrax1201@gmail.com">sportrax1201@gmail.com</a></p>
+    <p>Need help or have feedback? Contact us at <a href="mailto:sportrax1201@gmail.com">sportrax1201@gmail.com</a>.</p>
   </div>
 
   <div class="feature">
     <h2>🔒 Privacy</h2>
-    <p>SporTrax does not collect, store, or share any user data. For full details, view our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+    <p>SporTrax does not collect, store, or share any user data. View our <a href="privacy-policy.html">Privacy Policy</a> for full details.</p>
   </div>
+</main>
+
+<script>
+  const toggleButton = document.getElementById('toggle-theme');
+  const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+  const currentTheme = localStorage.getItem('theme');
+
+  if (currentTheme === 'dark' || (!currentTheme && prefersDarkScheme.matches)) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    toggleButton.textContent = '☀️ Light Mode';
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    toggleButton.textContent = '🌙 Dark Mode';
+  }
+
+  toggleButton.addEventListener('click', () => {
+    let theme = document.documentElement.getAttribute('data-theme');
+    if (theme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+      toggleButton.textContent = '🌙 Dark Mode';
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+      toggleButton.textContent = '☀️ Light Mode';
+    }
+  });
+</script>
 
 </body>
 </html>
