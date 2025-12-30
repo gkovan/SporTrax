@@ -1,0 +1,41 @@
+name: Deploy Static Website
+
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to main
+
+permissions:
+  id-token: write # Required for OIDC
+  contents: read  # Required to checkout code
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: us-east-1 # Change to your region
+
+      - name: Build Website
+        run: |
+          # If you use a framework (React, Vue, etc.), run your build command here
+          # npm install
+          # npm run build
+          echo "Building site..."
+
+      - name: Deploy to S3
+        run: |
+          aws s3 sync ./dist s3://${{ secrets.S3_BUCKET_NAME }} --delete
+          # Replace './dist' with your build folder (e.g., './public' or '.')
+
+      - name: Invalidate CloudFront Cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_ID }} \
+            --paths "/*"
