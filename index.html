@@ -6,133 +6,320 @@
 <title>SporTrax – Apple Watch Tennis Tracker</title>
 <style>
   :root {
-    --bg-color: #f0f2f5;
-    --text-color: #333;
-    --main-bg: #fff;
-    --box-shadow: rgba(0,0,0,0.1);
-    --h1-color: #004aad;
-    --h2-color: #0066cc;
-    --link-color: #0066cc;
-    --border-color: #e0e0e0;
+    --bg-gradient-start: #f8f9fa;
+    --bg-gradient-end: #e9ecef;
+    --text-color: #1a1a1a;
+    --text-secondary: #6c757d;
+    --main-bg: rgba(255, 255, 255, 0.95);
+    --card-bg: rgba(255, 255, 255, 0.8);
+    --box-shadow: rgba(0, 0, 0, 0.08);
+    --box-shadow-hover: rgba(0, 0, 0, 0.15);
+    --h1-gradient-start: #0066ff;
+    --h1-gradient-end: #00d4ff;
+    --h2-color: #0066ff;
+    --accent-color: #0066ff;
+    --link-color: #0066ff;
+    --border-color: rgba(0, 0, 0, 0.08);
+    --feature-bg: rgba(248, 249, 250, 0.6);
   }
 
   [data-theme="dark"] {
-    --bg-color: #121212;
-    --text-color: #ddd;
-    --main-bg: #1e1e1e;
-    --box-shadow: rgba(0,0,0,0.5);
-    --h1-color: #66b2ff;
-    --h2-color: #80cfff;
-    --link-color: #80cfff;
-    --border-color: #333;
+    --bg-gradient-start: #0a0a0a;
+    --bg-gradient-end: #1a1a1a;
+    --text-color: #f0f0f0;
+    --text-secondary: #a0a0a0;
+    --main-bg: rgba(30, 30, 30, 0.95);
+    --card-bg: rgba(40, 40, 40, 0.8);
+    --box-shadow: rgba(0, 0, 0, 0.5);
+    --box-shadow-hover: rgba(0, 0, 0, 0.7);
+    --h1-gradient-start: #4d9fff;
+    --h1-gradient-end: #00d4ff;
+    --h2-color: #4d9fff;
+    --accent-color: #4d9fff;
+    --link-color: #4d9fff;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --feature-bg: rgba(40, 40, 40, 0.4);
+  }
+
+  * {
+    box-sizing: border-box;
   }
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: var(--bg-color);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+    background-attachment: fixed;
     color: var(--text-color);
     margin: 0;
     padding: 0;
-    transition: background-color 0.3s, color 0.3s;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: 1.7;
   }
 
   main {
-    max-width: 800px;
-    margin: 3rem auto;
-    padding: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 3rem;
     background: var(--main-bg);
-    border-radius: 12px;
-    box-shadow: 0 4px 12px var(--box-shadow);
-    transition: background 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px var(--box-shadow);
+    border: 1px solid var(--border-color);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   h1 {
-    font-size: 2rem;
-    color: var(--h1-color);
-    margin-bottom: 0.5rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--h1-gradient-start) 0%, var(--h1-gradient-end) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
   }
 
   h2 {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
+    font-weight: 700;
     color: var(--h2-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    letter-spacing: -0.01em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  h3 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--h2-color);
+    margin-bottom: 0.75rem;
+    margin-top: 0;
   }
 
   p {
-    line-height: 1.6;
-    margin-bottom: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+  }
+
+  strong {
+    color: var(--text-color);
+    font-weight: 600;
   }
 
   ul {
-    margin: 0;
-    padding-left: 1.25rem;
-    line-height: 1.6;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    line-height: 1.8;
+  }
+
+  ul li {
+    margin-bottom: 0.75rem;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
   }
 
   a {
     color: var(--link-color);
     text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
   }
 
   a:hover {
-    text-decoration: underline;
+    opacity: 0.8;
+    transform: translateY(-1px);
   }
 
   img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
-    margin: 1rem 0;
-    box-shadow: 0 2px 8px var(--box-shadow);
-    transition: box-shadow 0.3s;
+    border-radius: 16px;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 20px var(--box-shadow);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid var(--border-color);
+  }
+
+  img:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 12px 40px var(--box-shadow-hover);
   }
 
   .feature {
-    border-top: 2px solid var(--border-color);
-    padding-top: 1rem;
-    margin-top: 2rem;
+    background: var(--feature-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2.5rem;
+    margin-top: 2.5rem;
+    border: 1px solid var(--border-color);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .feature:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px var(--box-shadow);
   }
 
   .feature:first-of-type {
-    border-top: none;
-    margin-top: 0;
-    padding-top: 0;
+    margin-top: 2.5rem;
+  }
+
+  .hero-section {
+    text-align: center;
+    padding: 2rem 0 3rem;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--text-secondary);
   }
 
   /* Dark Mode Toggle Button */
   .toggle-container {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .toggle-button {
     cursor: pointer;
-    background: none;
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid var(--border-color);
-    border-radius: 20px;
-    padding: 0.3rem 1rem;
-    font-size: 0.9rem;
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
     color: var(--text-color);
-    transition: background 0.3s, color 0.3s, border-color 0.3s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px var(--box-shadow);
   }
 
   .toggle-button:hover {
-    background: rgba(0,0,0,0.05);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px var(--box-shadow-hover);
+    background: var(--accent-color);
+    color: white;
   }
 
-  @media (max-width: 600px) {
+  .toggle-button:active {
+    transform: translateY(0);
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 3rem 0;
+    opacity: 0.5;
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .image-grid img {
+    margin: 0;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .dual-column {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .column-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+  }
+
+  .column-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px var(--box-shadow);
+  }
+
+  .download-badge {
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+
+  .download-badge:hover {
+    transform: translateY(-4px);
+  }
+
+  @media (max-width: 768px) {
     main {
       margin: 1rem;
-      padding: 1rem;
+      padding: 2rem 1.5rem;
+      border-radius: 20px;
     }
 
     h1 {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
     }
 
     h2 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+    }
+
+    .feature {
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .hero-section {
+      padding: 1rem 0 2rem;
+    }
+
+    .hero-section p {
       font-size: 1.1rem;
+    }
+
+    .dual-column {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .image-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    main {
+      padding: 1.5rem 1rem;
     }
   }
 </style>
@@ -144,8 +331,10 @@
     <button id="toggle-theme" class="toggle-button">🌙 Dark Mode</button>
   </div>
 
-  <h1>SporTrax – Track Your Tennis Game on Apple Watch</h1>
-  <p><strong>SporTrax</strong> is a simple and powerful Apple Watch app that lets you keep score during tennis matches — no phone needed! Stay focused and in control whether you're playing casually or competitively.</p>
+  <div class="hero-section">
+    <h1>SporTrax – Track Your Tennis Game on Apple Watch</h1>
+    <p><strong>SporTrax</strong> is a simple and powerful Apple Watch app that lets you keep score during tennis matches — no phone needed! Stay focused and in control whether you're playing casually or competitively.</p>
+  </div>
 
   <div class="feature">
     <h2>🎾 Core Features</h2>
@@ -218,10 +407,10 @@
       <li><strong>Service Stats:</strong> Monitor your service points won and your overall service win percentage.</li>
       <li><strong>Receiving Stats:</strong> See how well you perform when returning, with detailed receiving points won data.</li>
     </ul>
-    <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
-      <img src="apple-watch-analytics-1.jpg" alt="Match Analytics Overview" style="max-width: 30%; min-width: 150px;" />
-      <img src="apple-watch-analytics-2.jpg" alt="Break Point and Service Stats" style="max-width: 30%; min-width: 150px;" />
-      <img src="apple-watch-analytics-3.jpg" alt="Receiving and Win Percentages" style="max-width: 30%; min-width: 150px;" />
+    <div class="image-grid">
+      <img src="apple-watch-analytics-1.jpg" alt="Match Analytics Overview" />
+      <img src="apple-watch-analytics-2.jpg" alt="Break Point and Service Stats" />
+      <img src="apple-watch-analytics-3.jpg" alt="Receiving and Win Percentages" />
     </div>
   </div>
 
@@ -242,31 +431,31 @@
       </div>
     </div>
 
-    <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+    <hr />
 
-  <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; align-items: stretch;">
-    <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column;">
-      <h3>Match History</h3>
+  <div class="dual-column">
+    <div class="column-card">
+      <h3>📋 Match History</h3>
       <p>The Activity log stores every match chronologically, showing you exactly who you played, when, and what the final set scores were.</p>
-      <img src="activity-view.PNG" alt="SporTrax Activity History on iPhone" style="max-width: 100%; border-radius: 12px; margin-top: auto;" />
+      <img src="activity-view.PNG" alt="SporTrax Activity History on iPhone" />
     </div>
 
-    <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column;">
-      <h3>Detailed Match Analytics</h3>
+    <div class="column-card">
+      <h3>📈 Detailed Match Analytics</h3>
       <p>Dive deep into any specific match to analyze your performance in granular detail:</p>
-      <ul style="margin-bottom: 1.5rem;">
+      <ul>
         <li><strong>Box Score:</strong> A complete set-by-set breakdown.</li>
         <li><strong>Match Timing:</strong> View the exact start time, end time, and total duration of play.</li>
         <li><strong>Deep Stats:</strong> Compare your win percentages, break point conversions, and service accuracy against your opponent.</li>
       </ul>
-      <img src="match-detail-view.PNG" alt="Detailed Match Statistics on iPhone" style="max-width: 100%; border-radius: 12px; margin-top: auto;" />
+      <img src="match-detail-view.PNG" alt="Detailed Match Statistics on iPhone" />
     </div>
   </div>
 
   <div class="feature">
     <h2>🎾 Download the App</h2>
-    <a href="https://apps.apple.com/us/app/sportrax/id6744708010?itscg=30200&itsct=apps_box_badge&mttnsubad=6744708010" style="display: inline-block;">
-    <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1748131200" alt="Download on the App Store" style="width: 246px; height: 82px; vertical-align: middle; object-fit: contain;" />
+    <a href="https://apps.apple.com/us/app/sportrax/id6744708010?itscg=30200&itsct=apps_box_badge&mttnsubad=6744708010" class="download-badge">
+    <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1748131200" alt="Download on the App Store" style="width: 246px; height: 82px; vertical-align: middle; object-fit: contain; box-shadow: none;" />
     </a>
   </div>
 
