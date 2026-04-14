@@ -34,7 +34,7 @@ jobs:
           aws s3 sync . s3://${{ secrets.S3_BUCKET_NAME }} \
             --delete \
             --exclude ".git/*" \
-            --exclude ".github/*"
+            --exclude ".github/*" \
             --exclude "s3-exclude/*"
           # Replace './dist' with your build folder (e.g., './public' or '.')
 
