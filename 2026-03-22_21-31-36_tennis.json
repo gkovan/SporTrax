@@ -1,0 +1,200 @@
+{
+  "durationMinutes" : 0,
+  "endTime" : "2026-03-23T01:31:29Z",
+  "matchId" : "88F0D445-CD73-4F7D-B940-0EC45C4F3EF9",
+  "players" : {
+    "player1" : {
+      "isWinner" : false,
+      "name" : "Player 1"
+    },
+    "player2" : {
+      "isWinner" : true,
+      "name" : "Player 2"
+    }
+  },
+  "pointEvents" : [
+    {
+      "currentSet" : 1,
+      "heartRateBPM" : 63,
+      "isTieBreakGame" : false,
+      "player1GameScore" : "15",
+      "player1MatchScore" : 0,
+      "player1SetScore" : 0,
+      "player2GameScore" : "0",
+      "player2MatchScore" : 0,
+      "player2SetScore" : 0,
+      "pointNumber" : 1,
+      "timestamp" : "2026-03-23T01:31:14Z"
+    },
+    {
+      "currentSet" : 1,
+      "heartRateBPM" : 63,
+      "isTieBreakGame" : false,
+      "player1GameScore" : "30",
+      "player1MatchScore" : 0,
+      "player1SetScore" : 0,
+      "player2GameScore" : "0",
+      "player2MatchScore" : 0,
+      "player2SetScore" : 0,
+      "pointNumber" : 2,
+      "timestamp" : "2026-03-23T01:31:15Z"
+    },
+    {
+      "currentSet" : 1,
+      "heartRateBPM" : 63,
+      "isTieBreakGame" : false,
+      "player1GameScore" : "40",
+      "player1MatchScore" : 0,
+      "player1SetScore" : 0,
+      "player2GameScore" : "0",
+      "player2MatchScore" : 0,
+      "player2SetScore" : 0,
+      "pointNumber" : 3,
+      "timestamp" : "2026-03-23T01:31:16Z"
+    },
+    {
+      "currentSet" : 1,
+      "heartRateBPM" : 63,
+      "isTieBreakGame" : false,
+      "player1GameScore" : "40",
+      "player1MatchScore" : 0,
+      "player1SetScore" : 0,
+      "player2GameScore" : "15",
+      "player2MatchScore" : 0,
+      "player2SetScore" : 0,
+      "pointNumber" : 4,
+      "timestamp" : "2026-03-23T01:31:17Z"
+    },
+    {
+      "currentSet" : 1,
+      "heartRateBPM" : 63,
+      "isTieBreakGame" : false,
+      "player1GameScore" : "40",
+      "player1MatchScore" : 0,
+      "player1SetScore" : 0,
+      "player2GameScore" : "30",
+      "player2MatchScore" : 0,
+      "player2SetScore" : 0,
+      "pointNumber" : 5,
+      "timestamp" : "2026-03-23T01:31:18Z"
+    },
+    {
+      "currentSet" : 1,
+      "heartRateBPM" : 61.99999999999999,
+      "isTieBreakGame" : false,
+      "player1GameScore" : "40",
+      "player1MatchScore" : 0,
+      "player1SetScore" : 0,
+      "player2GameScore" : "40",
+      "player2MatchScore" : 0,
+      "player2SetScore" : 0,
+      "pointNumber" : 6,
+      "timestamp" : "2026-03-23T01:31:18Z"
+    },
+    {
+      "currentSet" : 1,
+      "heartRateBPM" : 61.99999999999999,
+      "isTieBreakGame" : false,
+      "player1GameScore" : "40",
+      "player1MatchScore" : 0,
+      "player1SetScore" : 0,
+      "player2GameScore" : "AD",
+      "player2MatchScore" : 0,
+      "player2SetScore" : 0,
+      "pointNumber" : 7,
+      "timestamp" : "2026-03-23T01:31:19Z"
+    },
+    {
+      "currentSet" : 1,
+      "heartRateBPM" : 61.99999999999999,
+      "isTieBreakGame" : false,
+      "player1GameScore" : "0",
+      "player1MatchScore" : 0,
+      "player1SetScore" : 0,
+      "player2GameScore" : "0",
+      "player2MatchScore" : 0,
+      "player2SetScore" : 1,
+      "pointNumber" : 8,
+      "timestamp" : "2026-03-23T01:31:20Z"
+    },
+    {
+      "currentSet" : 1,
+      "heartRateBPM" : 58,
+      "isTieBreakGame" : false,
+      "player1GameScore" : "0",
+      "player1MatchScore" : 0,
+      "player1SetScore" : 0,
+      "player2GameScore" : "15",
+      "player2MatchScore" : 0,
+      "player2SetScore" : 1,
+      "pointNumber" : 9,
+      "timestamp" : "2026-03-23T01:31:27Z"
+    },
+    {
+      "currentSet" : 1,
+      "heartRateBPM" : 58,
+      "isTieBreakGame" : false,
+      "player1GameScore" : "0",
+      "player1MatchScore" : 0,
+      "player1SetScore" : 0,
+      "player2GameScore" : "30",
+      "player2MatchScore" : 0,
+      "player2SetScore" : 1,
+      "pointNumber" : 10,
+      "timestamp" : "2026-03-23T01:31:28Z"
+    },
+    {
+      "currentSet" : 1,
+      "heartRateBPM" : 61,
+      "isTieBreakGame" : false,
+      "player1GameScore" : "0",
+      "player1MatchScore" : 0,
+      "player1SetScore" : 0,
+      "player2GameScore" : "40",
+      "player2MatchScore" : 0,
+      "player2SetScore" : 1,
+      "pointNumber" : 11,
+      "timestamp" : "2026-03-23T01:31:29Z"
+    }
+  ],
+  "schemaVersion" : "1.0.0",
+  "scores" : {
+    "final" : "0-1",
+    "sets" : [
+      {
+        "id" : "20BD1672-5FC8-48EC-9203-6F6BA9A813AE",
+        "player1Games" : 0,
+        "player2Games" : 1,
+        "setNumber" : 1,
+        "setType" : "regular"
+      }
+    ]
+  },
+  "sport" : "tennis",
+  "startTime" : "2026-03-23T01:30:45Z",
+  "stats" : {
+    "player1" : {
+      "breakPointsTotal" : 3,
+      "breakPointsWon" : 0,
+      "totalPointsWon" : 3,
+      "totalReceivingPoints" : 3,
+      "totalReceivingPointsWon" : 0,
+      "totalServingPoints" : 8,
+      "totalServingPointsWon" : 3
+    },
+    "player2" : {
+      "breakPointsTotal" : 1,
+      "breakPointsWon" : 1,
+      "totalPointsWon" : 8,
+      "totalReceivingPoints" : 8,
+      "totalReceivingPointsWon" : 5,
+      "totalServingPoints" : 3,
+      "totalServingPointsWon" : 3
+    },
+    "totalPointsInMatch" : 11
+  },
+  "tournament" : {
+    "name" : "Friendly Match",
+    "round" : "Final"
+  }
+}

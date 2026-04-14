@@ -1,0 +1,77 @@
+{
+  "durationMinutes" : 0,
+  "endTime" : "2026-04-07T03:04:40Z",
+  "matchId" : "6AA4037B-5242-41A4-BD7C-64407E371E42",
+  "metrics" : {
+    "activeCaloriesBurned" : 0,
+    "averageHeartRateBPM" : 61,
+    "latestHeartRateBPM" : 63,
+    "maxHeartRateBPM" : 64,
+    "sampleCount" : 12
+  },
+  "practiceType" : "Footwork",
+  "samples" : [
+    {
+      "activeCaloriesBurned" : 0,
+      "timestamp" : "2026-04-07T03:03:45Z"
+    },
+    {
+      "activeCaloriesBurned" : 0,
+      "heartRateBPM" : 58,
+      "timestamp" : "2026-04-07T03:03:47Z"
+    },
+    {
+      "activeCaloriesBurned" : 0,
+      "heartRateBPM" : 59,
+      "timestamp" : "2026-04-07T03:03:51Z"
+    },
+    {
+      "activeCaloriesBurned" : 0,
+      "heartRateBPM" : 56,
+      "timestamp" : "2026-04-07T03:03:57Z"
+    },
+    {
+      "activeCaloriesBurned" : 0,
+      "heartRateBPM" : 60,
+      "timestamp" : "2026-04-07T03:04:02Z"
+    },
+    {
+      "activeCaloriesBurned" : 0,
+      "heartRateBPM" : 64,
+      "timestamp" : "2026-04-07T03:04:08Z"
+    },
+    {
+      "activeCaloriesBurned" : 0,
+      "heartRateBPM" : 63,
+      "timestamp" : "2026-04-07T03:04:13Z"
+    },
+    {
+      "activeCaloriesBurned" : 0,
+      "heartRateBPM" : 60,
+      "timestamp" : "2026-04-07T03:04:18Z"
+    },
+    {
+      "activeCaloriesBurned" : 0,
+      "heartRateBPM" : 63,
+      "timestamp" : "2026-04-07T03:04:23Z"
+    },
+    {
+      "activeCaloriesBurned" : 0,
+      "heartRateBPM" : 61,
+      "timestamp" : "2026-04-07T03:04:28Z"
+    },
+    {
+      "activeCaloriesBurned" : 0,
+      "heartRateBPM" : 64,
+      "timestamp" : "2026-04-07T03:04:33Z"
+    },
+    {
+      "activeCaloriesBurned" : 0,
+      "heartRateBPM" : 63,
+      "timestamp" : "2026-04-07T03:04:38Z"
+    }
+  ],
+  "schemaVersion" : "1.0.0",
+  "sport" : "practice",
+  "startTime" : "2026-04-07T03:03:41Z"
+}
