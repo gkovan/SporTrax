@@ -35,6 +35,7 @@ jobs:
             --delete \
             --exclude ".git/*" \
             --exclude ".github/*"
+            --exclude "s3-exclude/*"
           # Replace './dist' with your build folder (e.g., './public' or '.')
 
       - name: Invalidate CloudFront Cache
