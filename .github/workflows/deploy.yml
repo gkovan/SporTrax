@@ -6,6 +6,7 @@ on:
       - main  # Trigger on pushes to main
     paths-ignore:
       - 's3-exclude/**'
+      - 'README.md'
 
 permissions:
   id-token: write # Required for OIDC
