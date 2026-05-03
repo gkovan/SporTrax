@@ -1,0 +1,997 @@
+{
+  "durationMinutes" : 0,
+  "endTime" : "2026-05-03T02:20:28Z",
+  "games" : [
+    {
+      "durationMinutes" : 0,
+      "endTime" : "2026-05-03T02:20:09Z",
+      "gameNumber" : 1,
+      "player1Score" : 11,
+      "player2Score" : 4,
+      "rallyEvents" : [
+        {
+          "matchRallyNumber" : 1,
+          "player1Score" : 1,
+          "player2Score" : 0,
+          "rallyNumber" : 1,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:19:48Z"
+        },
+        {
+          "matchRallyNumber" : 2,
+          "player1Score" : 2,
+          "player2Score" : 0,
+          "rallyNumber" : 2,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:19:48Z"
+        },
+        {
+          "matchRallyNumber" : 3,
+          "player1Score" : 3,
+          "player2Score" : 0,
+          "rallyNumber" : 3,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:19:48Z"
+        },
+        {
+          "matchRallyNumber" : 4,
+          "player1Score" : 4,
+          "player2Score" : 0,
+          "rallyNumber" : 4,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:19:49Z"
+        },
+        {
+          "matchRallyNumber" : 5,
+          "player1Score" : 4,
+          "player2Score" : 0,
+          "rallyNumber" : 5,
+          "rallyWinner" : "player2",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:19:50Z"
+        },
+        {
+          "matchRallyNumber" : 6,
+          "player1Score" : 4,
+          "player2Score" : 1,
+          "rallyNumber" : 6,
+          "rallyWinner" : "player2",
+          "server" : "player2",
+          "timestamp" : "2026-05-03T02:19:50Z"
+        },
+        {
+          "matchRallyNumber" : 7,
+          "player1Score" : 4,
+          "player2Score" : 2,
+          "rallyNumber" : 7,
+          "rallyWinner" : "player2",
+          "server" : "player2",
+          "timestamp" : "2026-05-03T02:19:51Z"
+        },
+        {
+          "matchRallyNumber" : 8,
+          "player1Score" : 4,
+          "player2Score" : 3,
+          "rallyNumber" : 8,
+          "rallyWinner" : "player2",
+          "server" : "player2",
+          "timestamp" : "2026-05-03T02:19:51Z"
+        },
+        {
+          "matchRallyNumber" : 9,
+          "player1Score" : 4,
+          "player2Score" : 4,
+          "rallyNumber" : 9,
+          "rallyWinner" : "player2",
+          "server" : "player2",
+          "timestamp" : "2026-05-03T02:19:51Z"
+        },
+        {
+          "matchRallyNumber" : 10,
+          "player1Score" : 4,
+          "player2Score" : 4,
+          "rallyNumber" : 10,
+          "rallyWinner" : "player1",
+          "server" : "player2",
+          "timestamp" : "2026-05-03T02:20:06Z"
+        },
+        {
+          "matchRallyNumber" : 11,
+          "player1Score" : 5,
+          "player2Score" : 4,
+          "rallyNumber" : 11,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:07Z"
+        },
+        {
+          "matchRallyNumber" : 12,
+          "player1Score" : 6,
+          "player2Score" : 4,
+          "rallyNumber" : 12,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:07Z"
+        },
+        {
+          "matchRallyNumber" : 13,
+          "player1Score" : 7,
+          "player2Score" : 4,
+          "rallyNumber" : 13,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:07Z"
+        },
+        {
+          "matchRallyNumber" : 14,
+          "player1Score" : 8,
+          "player2Score" : 4,
+          "rallyNumber" : 14,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:08Z"
+        },
+        {
+          "matchRallyNumber" : 15,
+          "player1Score" : 9,
+          "player2Score" : 4,
+          "rallyNumber" : 15,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:08Z"
+        },
+        {
+          "matchRallyNumber" : 16,
+          "player1Score" : 10,
+          "player2Score" : 4,
+          "rallyNumber" : 16,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:08Z"
+        },
+        {
+          "matchRallyNumber" : 17,
+          "player1Score" : 11,
+          "player2Score" : 4,
+          "rallyNumber" : 17,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:09Z"
+        }
+      ],
+      "startTime" : "2026-05-03T02:19:48Z",
+      "stats" : {
+        "player1RalliesWon" : 12,
+        "player2RalliesWon" : 5,
+        "totalRalliesInGame" : 17
+      },
+      "winner" : "player1"
+    },
+    {
+      "durationMinutes" : 0,
+      "endTime" : "2026-05-03T02:20:21Z",
+      "gameNumber" : 2,
+      "player1Score" : 2,
+      "player2Score" : 11,
+      "rallyEvents" : [
+        {
+          "matchRallyNumber" : 18,
+          "player1Score" : 0,
+          "player2Score" : 1,
+          "rallyNumber" : 1,
+          "rallyWinner" : "player2",
+          "server" : "player2",
+          "timestamp" : "2026-05-03T02:20:12Z"
+        },
+        {
+          "matchRallyNumber" : 19,
+          "player1Score" : 0,
+          "player2Score" : 2,
+          "rallyNumber" : 2,
+          "rallyWinner" : "player2",
+          "server" : "player2",
+          "timestamp" : "2026-05-03T02:20:13Z"
+        },
+        {
+          "matchRallyNumber" : 20,
+          "player1Score" : 0,
+          "player2Score" : 3,
+          "rallyNumber" : 3,
+          "rallyWinner" : "player2",
+          "server" : "player2",
+          "timestamp" : "2026-05-03T02:20:13Z"
+        },
+        {
+          "matchRallyNumber" : 21,
+          "player1Score" : 0,
+          "player2Score" : 4,
+          "rallyNumber" : 4,
+          "rallyWinner" : "player2",
+          "server" : "player2",
+          "timestamp" : "2026-05-03T02:20:13Z"
+        },
+        {
+          "matchRallyNumber" : 22,
+          "player1Score" : 0,
+          "player2Score" : 5,
+          "rallyNumber" : 5,
+          "rallyWinner" : "player2",
+          "server" : "player2",
+          "timestamp" : "2026-05-03T02:20:14Z"
+        },
+        {
+          "matchRallyNumber" : 23,
+          "player1Score" : 0,
+          "player2Score" : 6,
+          "rallyNumber" : 6,
+          "rallyWinner" : "player2",
+          "server" : "player2",
+          "timestamp" : "2026-05-03T02:20:14Z"
+        },
+        {
+          "matchRallyNumber" : 24,
+          "player1Score" : 0,
+          "player2Score" : 7,
+          "rallyNumber" : 7,
+          "rallyWinner" : "player2",
+          "server" : "player2",
+          "timestamp" : "2026-05-03T02:20:14Z"
+        },
+        {
+          "matchRallyNumber" : 25,
+          "player1Score" : 0,
+          "player2Score" : 8,
+          "rallyNumber" : 8,
+          "rallyWinner" : "player2",
+          "server" : "player2",
+          "timestamp" : "2026-05-03T02:20:15Z"
+        },
+        {
+          "matchRallyNumber" : 26,
+          "player1Score" : 0,
+          "player2Score" : 8,
+          "rallyNumber" : 9,
+          "rallyWinner" : "player1",
+          "server" : "player2",
+          "timestamp" : "2026-05-03T02:20:16Z"
+        },
+        {
+          "matchRallyNumber" : 27,
+          "player1Score" : 0,
+          "player2Score" : 8,
+          "rallyNumber" : 10,
+          "rallyWinner" : "player2",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:18Z"
+        },
+        {
+          "matchRallyNumber" : 28,
+          "player1Score" : 0,
+          "player2Score" : 8,
+          "rallyNumber" : 11,
+          "rallyWinner" : "player1",
+          "server" : "player2",
+          "timestamp" : "2026-05-03T02:20:19Z"
+        },
+        {
+          "matchRallyNumber" : 29,
+          "player1Score" : 1,
+          "player2Score" : 8,
+          "rallyNumber" : 12,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:19Z"
+        },
+        {
+          "matchRallyNumber" : 30,
+          "player1Score" : 2,
+          "player2Score" : 8,
+          "rallyNumber" : 13,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:20Z"
+        },
+        {
+          "matchRallyNumber" : 31,
+          "player1Score" : 2,
+          "player2Score" : 8,
+          "rallyNumber" : 14,
+          "rallyWinner" : "player2",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:20Z"
+        },
+        {
+          "matchRallyNumber" : 32,
+          "player1Score" : 2,
+          "player2Score" : 9,
+          "rallyNumber" : 15,
+          "rallyWinner" : "player2",
+          "server" : "player2",
+          "timestamp" : "2026-05-03T02:20:21Z"
+        },
+        {
+          "matchRallyNumber" : 33,
+          "player1Score" : 2,
+          "player2Score" : 10,
+          "rallyNumber" : 16,
+          "rallyWinner" : "player2",
+          "server" : "player2",
+          "timestamp" : "2026-05-03T02:20:21Z"
+        },
+        {
+          "matchRallyNumber" : 34,
+          "player1Score" : 2,
+          "player2Score" : 11,
+          "rallyNumber" : 17,
+          "rallyWinner" : "player2",
+          "server" : "player2",
+          "timestamp" : "2026-05-03T02:20:21Z"
+        }
+      ],
+      "startTime" : "2026-05-03T02:20:12Z",
+      "stats" : {
+        "player1RalliesWon" : 4,
+        "player2RalliesWon" : 13,
+        "totalRalliesInGame" : 17
+      },
+      "winner" : "player2"
+    },
+    {
+      "durationMinutes" : 0,
+      "endTime" : "2026-05-03T02:20:28Z",
+      "gameNumber" : 3,
+      "player1Score" : 11,
+      "player2Score" : 0,
+      "rallyEvents" : [
+        {
+          "matchRallyNumber" : 35,
+          "player1Score" : 1,
+          "player2Score" : 0,
+          "rallyNumber" : 1,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:25Z"
+        },
+        {
+          "matchRallyNumber" : 36,
+          "player1Score" : 2,
+          "player2Score" : 0,
+          "rallyNumber" : 2,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:26Z"
+        },
+        {
+          "matchRallyNumber" : 37,
+          "player1Score" : 3,
+          "player2Score" : 0,
+          "rallyNumber" : 3,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:26Z"
+        },
+        {
+          "matchRallyNumber" : 38,
+          "player1Score" : 4,
+          "player2Score" : 0,
+          "rallyNumber" : 4,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:26Z"
+        },
+        {
+          "matchRallyNumber" : 39,
+          "player1Score" : 5,
+          "player2Score" : 0,
+          "rallyNumber" : 5,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:26Z"
+        },
+        {
+          "matchRallyNumber" : 40,
+          "player1Score" : 6,
+          "player2Score" : 0,
+          "rallyNumber" : 6,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:27Z"
+        },
+        {
+          "matchRallyNumber" : 41,
+          "player1Score" : 7,
+          "player2Score" : 0,
+          "rallyNumber" : 7,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:27Z"
+        },
+        {
+          "matchRallyNumber" : 42,
+          "player1Score" : 8,
+          "player2Score" : 0,
+          "rallyNumber" : 8,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:27Z"
+        },
+        {
+          "matchRallyNumber" : 43,
+          "player1Score" : 9,
+          "player2Score" : 0,
+          "rallyNumber" : 9,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:27Z"
+        },
+        {
+          "matchRallyNumber" : 44,
+          "player1Score" : 10,
+          "player2Score" : 0,
+          "rallyNumber" : 10,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:28Z"
+        },
+        {
+          "matchRallyNumber" : 45,
+          "player1Score" : 11,
+          "player2Score" : 0,
+          "rallyNumber" : 11,
+          "rallyWinner" : "player1",
+          "server" : "player1",
+          "timestamp" : "2026-05-03T02:20:28Z"
+        }
+      ],
+      "startTime" : "2026-05-03T02:20:25Z",
+      "stats" : {
+        "player1RalliesWon" : 11,
+        "player2RalliesWon" : 0,
+        "totalRalliesInGame" : 11
+      },
+      "winner" : "player1"
+    }
+  ],
+  "matchId" : "A19F617B-77C8-48D8-96D1-B0D3F3A4534F",
+  "players" : {
+    "player1" : {
+      "isWinner" : true,
+      "name" : "Player1"
+    },
+    "player2" : {
+      "isWinner" : false,
+      "name" : "Player2"
+    }
+  },
+  "rallyEvents" : [
+    {
+      "gameNumber" : 1,
+      "player1GamesWon" : 0,
+      "player1Score" : 1,
+      "player2GamesWon" : 0,
+      "player2Score" : 0,
+      "rallyNumber" : 1,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:19:48Z"
+    },
+    {
+      "gameNumber" : 1,
+      "player1GamesWon" : 0,
+      "player1Score" : 2,
+      "player2GamesWon" : 0,
+      "player2Score" : 0,
+      "rallyNumber" : 2,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:19:48Z"
+    },
+    {
+      "gameNumber" : 1,
+      "player1GamesWon" : 0,
+      "player1Score" : 3,
+      "player2GamesWon" : 0,
+      "player2Score" : 0,
+      "rallyNumber" : 3,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:19:48Z"
+    },
+    {
+      "gameNumber" : 1,
+      "player1GamesWon" : 0,
+      "player1Score" : 4,
+      "player2GamesWon" : 0,
+      "player2Score" : 0,
+      "rallyNumber" : 4,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:19:49Z"
+    },
+    {
+      "gameNumber" : 1,
+      "player1GamesWon" : 0,
+      "player1Score" : 4,
+      "player2GamesWon" : 0,
+      "player2Score" : 0,
+      "rallyNumber" : 5,
+      "rallyWinner" : "player2",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:19:50Z"
+    },
+    {
+      "gameNumber" : 1,
+      "player1GamesWon" : 0,
+      "player1Score" : 4,
+      "player2GamesWon" : 0,
+      "player2Score" : 1,
+      "rallyNumber" : 6,
+      "rallyWinner" : "player2",
+      "server" : "player2",
+      "timestamp" : "2026-05-03T02:19:50Z"
+    },
+    {
+      "gameNumber" : 1,
+      "player1GamesWon" : 0,
+      "player1Score" : 4,
+      "player2GamesWon" : 0,
+      "player2Score" : 2,
+      "rallyNumber" : 7,
+      "rallyWinner" : "player2",
+      "server" : "player2",
+      "timestamp" : "2026-05-03T02:19:51Z"
+    },
+    {
+      "gameNumber" : 1,
+      "player1GamesWon" : 0,
+      "player1Score" : 4,
+      "player2GamesWon" : 0,
+      "player2Score" : 3,
+      "rallyNumber" : 8,
+      "rallyWinner" : "player2",
+      "server" : "player2",
+      "timestamp" : "2026-05-03T02:19:51Z"
+    },
+    {
+      "gameNumber" : 1,
+      "player1GamesWon" : 0,
+      "player1Score" : 4,
+      "player2GamesWon" : 0,
+      "player2Score" : 4,
+      "rallyNumber" : 9,
+      "rallyWinner" : "player2",
+      "server" : "player2",
+      "timestamp" : "2026-05-03T02:19:51Z"
+    },
+    {
+      "gameNumber" : 1,
+      "player1GamesWon" : 0,
+      "player1Score" : 4,
+      "player2GamesWon" : 0,
+      "player2Score" : 4,
+      "rallyNumber" : 10,
+      "rallyWinner" : "player1",
+      "server" : "player2",
+      "timestamp" : "2026-05-03T02:20:06Z"
+    },
+    {
+      "gameNumber" : 1,
+      "player1GamesWon" : 0,
+      "player1Score" : 5,
+      "player2GamesWon" : 0,
+      "player2Score" : 4,
+      "rallyNumber" : 11,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:07Z"
+    },
+    {
+      "gameNumber" : 1,
+      "player1GamesWon" : 0,
+      "player1Score" : 6,
+      "player2GamesWon" : 0,
+      "player2Score" : 4,
+      "rallyNumber" : 12,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:07Z"
+    },
+    {
+      "gameNumber" : 1,
+      "player1GamesWon" : 0,
+      "player1Score" : 7,
+      "player2GamesWon" : 0,
+      "player2Score" : 4,
+      "rallyNumber" : 13,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:07Z"
+    },
+    {
+      "gameNumber" : 1,
+      "player1GamesWon" : 0,
+      "player1Score" : 8,
+      "player2GamesWon" : 0,
+      "player2Score" : 4,
+      "rallyNumber" : 14,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:08Z"
+    },
+    {
+      "gameNumber" : 1,
+      "player1GamesWon" : 0,
+      "player1Score" : 9,
+      "player2GamesWon" : 0,
+      "player2Score" : 4,
+      "rallyNumber" : 15,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:08Z"
+    },
+    {
+      "gameNumber" : 1,
+      "player1GamesWon" : 0,
+      "player1Score" : 10,
+      "player2GamesWon" : 0,
+      "player2Score" : 4,
+      "rallyNumber" : 16,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:08Z"
+    },
+    {
+      "gameNumber" : 1,
+      "player1GamesWon" : 0,
+      "player1Score" : 11,
+      "player2GamesWon" : 0,
+      "player2Score" : 4,
+      "rallyNumber" : 17,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:09Z"
+    },
+    {
+      "gameNumber" : 2,
+      "player1GamesWon" : 1,
+      "player1Score" : 0,
+      "player2GamesWon" : 0,
+      "player2Score" : 1,
+      "rallyNumber" : 18,
+      "rallyWinner" : "player2",
+      "server" : "player2",
+      "timestamp" : "2026-05-03T02:20:12Z"
+    },
+    {
+      "gameNumber" : 2,
+      "player1GamesWon" : 1,
+      "player1Score" : 0,
+      "player2GamesWon" : 0,
+      "player2Score" : 2,
+      "rallyNumber" : 19,
+      "rallyWinner" : "player2",
+      "server" : "player2",
+      "timestamp" : "2026-05-03T02:20:13Z"
+    },
+    {
+      "gameNumber" : 2,
+      "player1GamesWon" : 1,
+      "player1Score" : 0,
+      "player2GamesWon" : 0,
+      "player2Score" : 3,
+      "rallyNumber" : 20,
+      "rallyWinner" : "player2",
+      "server" : "player2",
+      "timestamp" : "2026-05-03T02:20:13Z"
+    },
+    {
+      "gameNumber" : 2,
+      "player1GamesWon" : 1,
+      "player1Score" : 0,
+      "player2GamesWon" : 0,
+      "player2Score" : 4,
+      "rallyNumber" : 21,
+      "rallyWinner" : "player2",
+      "server" : "player2",
+      "timestamp" : "2026-05-03T02:20:13Z"
+    },
+    {
+      "gameNumber" : 2,
+      "player1GamesWon" : 1,
+      "player1Score" : 0,
+      "player2GamesWon" : 0,
+      "player2Score" : 5,
+      "rallyNumber" : 22,
+      "rallyWinner" : "player2",
+      "server" : "player2",
+      "timestamp" : "2026-05-03T02:20:14Z"
+    },
+    {
+      "gameNumber" : 2,
+      "player1GamesWon" : 1,
+      "player1Score" : 0,
+      "player2GamesWon" : 0,
+      "player2Score" : 6,
+      "rallyNumber" : 23,
+      "rallyWinner" : "player2",
+      "server" : "player2",
+      "timestamp" : "2026-05-03T02:20:14Z"
+    },
+    {
+      "gameNumber" : 2,
+      "player1GamesWon" : 1,
+      "player1Score" : 0,
+      "player2GamesWon" : 0,
+      "player2Score" : 7,
+      "rallyNumber" : 24,
+      "rallyWinner" : "player2",
+      "server" : "player2",
+      "timestamp" : "2026-05-03T02:20:14Z"
+    },
+    {
+      "gameNumber" : 2,
+      "player1GamesWon" : 1,
+      "player1Score" : 0,
+      "player2GamesWon" : 0,
+      "player2Score" : 8,
+      "rallyNumber" : 25,
+      "rallyWinner" : "player2",
+      "server" : "player2",
+      "timestamp" : "2026-05-03T02:20:15Z"
+    },
+    {
+      "gameNumber" : 2,
+      "player1GamesWon" : 1,
+      "player1Score" : 0,
+      "player2GamesWon" : 0,
+      "player2Score" : 8,
+      "rallyNumber" : 26,
+      "rallyWinner" : "player1",
+      "server" : "player2",
+      "timestamp" : "2026-05-03T02:20:16Z"
+    },
+    {
+      "gameNumber" : 2,
+      "player1GamesWon" : 1,
+      "player1Score" : 0,
+      "player2GamesWon" : 0,
+      "player2Score" : 8,
+      "rallyNumber" : 27,
+      "rallyWinner" : "player2",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:18Z"
+    },
+    {
+      "gameNumber" : 2,
+      "player1GamesWon" : 1,
+      "player1Score" : 0,
+      "player2GamesWon" : 0,
+      "player2Score" : 8,
+      "rallyNumber" : 28,
+      "rallyWinner" : "player1",
+      "server" : "player2",
+      "timestamp" : "2026-05-03T02:20:19Z"
+    },
+    {
+      "gameNumber" : 2,
+      "player1GamesWon" : 1,
+      "player1Score" : 1,
+      "player2GamesWon" : 0,
+      "player2Score" : 8,
+      "rallyNumber" : 29,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:19Z"
+    },
+    {
+      "gameNumber" : 2,
+      "player1GamesWon" : 1,
+      "player1Score" : 2,
+      "player2GamesWon" : 0,
+      "player2Score" : 8,
+      "rallyNumber" : 30,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:20Z"
+    },
+    {
+      "gameNumber" : 2,
+      "player1GamesWon" : 1,
+      "player1Score" : 2,
+      "player2GamesWon" : 0,
+      "player2Score" : 8,
+      "rallyNumber" : 31,
+      "rallyWinner" : "player2",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:20Z"
+    },
+    {
+      "gameNumber" : 2,
+      "player1GamesWon" : 1,
+      "player1Score" : 2,
+      "player2GamesWon" : 0,
+      "player2Score" : 9,
+      "rallyNumber" : 32,
+      "rallyWinner" : "player2",
+      "server" : "player2",
+      "timestamp" : "2026-05-03T02:20:21Z"
+    },
+    {
+      "gameNumber" : 2,
+      "player1GamesWon" : 1,
+      "player1Score" : 2,
+      "player2GamesWon" : 0,
+      "player2Score" : 10,
+      "rallyNumber" : 33,
+      "rallyWinner" : "player2",
+      "server" : "player2",
+      "timestamp" : "2026-05-03T02:20:21Z"
+    },
+    {
+      "gameNumber" : 2,
+      "player1GamesWon" : 1,
+      "player1Score" : 2,
+      "player2GamesWon" : 0,
+      "player2Score" : 11,
+      "rallyNumber" : 34,
+      "rallyWinner" : "player2",
+      "server" : "player2",
+      "timestamp" : "2026-05-03T02:20:21Z"
+    },
+    {
+      "gameNumber" : 3,
+      "player1GamesWon" : 1,
+      "player1Score" : 1,
+      "player2GamesWon" : 1,
+      "player2Score" : 0,
+      "rallyNumber" : 35,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:25Z"
+    },
+    {
+      "gameNumber" : 3,
+      "player1GamesWon" : 1,
+      "player1Score" : 2,
+      "player2GamesWon" : 1,
+      "player2Score" : 0,
+      "rallyNumber" : 36,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:26Z"
+    },
+    {
+      "gameNumber" : 3,
+      "player1GamesWon" : 1,
+      "player1Score" : 3,
+      "player2GamesWon" : 1,
+      "player2Score" : 0,
+      "rallyNumber" : 37,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:26Z"
+    },
+    {
+      "gameNumber" : 3,
+      "player1GamesWon" : 1,
+      "player1Score" : 4,
+      "player2GamesWon" : 1,
+      "player2Score" : 0,
+      "rallyNumber" : 38,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:26Z"
+    },
+    {
+      "gameNumber" : 3,
+      "player1GamesWon" : 1,
+      "player1Score" : 5,
+      "player2GamesWon" : 1,
+      "player2Score" : 0,
+      "rallyNumber" : 39,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:26Z"
+    },
+    {
+      "gameNumber" : 3,
+      "player1GamesWon" : 1,
+      "player1Score" : 6,
+      "player2GamesWon" : 1,
+      "player2Score" : 0,
+      "rallyNumber" : 40,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:27Z"
+    },
+    {
+      "gameNumber" : 3,
+      "player1GamesWon" : 1,
+      "player1Score" : 7,
+      "player2GamesWon" : 1,
+      "player2Score" : 0,
+      "rallyNumber" : 41,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:27Z"
+    },
+    {
+      "gameNumber" : 3,
+      "player1GamesWon" : 1,
+      "player1Score" : 8,
+      "player2GamesWon" : 1,
+      "player2Score" : 0,
+      "rallyNumber" : 42,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:27Z"
+    },
+    {
+      "gameNumber" : 3,
+      "player1GamesWon" : 1,
+      "player1Score" : 9,
+      "player2GamesWon" : 1,
+      "player2Score" : 0,
+      "rallyNumber" : 43,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:27Z"
+    },
+    {
+      "gameNumber" : 3,
+      "player1GamesWon" : 1,
+      "player1Score" : 10,
+      "player2GamesWon" : 1,
+      "player2Score" : 0,
+      "rallyNumber" : 44,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:28Z"
+    },
+    {
+      "gameNumber" : 3,
+      "player1GamesWon" : 1,
+      "player1Score" : 11,
+      "player2GamesWon" : 1,
+      "player2Score" : 0,
+      "rallyNumber" : 45,
+      "rallyWinner" : "player1",
+      "server" : "player1",
+      "timestamp" : "2026-05-03T02:20:28Z"
+    }
+  ],
+  "schemaVersion" : "1.0.0",
+  "scores" : {
+    "final" : "2-1",
+    "gameWinningScore" : 11,
+    "player1GamesWon" : 2,
+    "player2GamesWon" : 1
+  },
+  "sport" : "pickleball",
+  "startTime" : "2026-05-03T02:19:46Z",
+  "stats" : {
+    "player1" : {
+      "breakPointsTotal" : 0,
+      "breakPointsWon" : 0,
+      "totalPointsWon" : 27,
+      "totalReceivingPoints" : 18,
+      "totalReceivingPointsWon" : 3,
+      "totalServingPoints" : 27,
+      "totalServingPointsWon" : 24
+    },
+    "player2" : {
+      "breakPointsTotal" : 0,
+      "breakPointsWon" : 0,
+      "totalPointsWon" : 18,
+      "totalReceivingPoints" : 27,
+      "totalReceivingPointsWon" : 3,
+      "totalServingPoints" : 18,
+      "totalServingPointsWon" : 15
+    },
+    "totalRalliesInMatch" : 45
+  }
+}

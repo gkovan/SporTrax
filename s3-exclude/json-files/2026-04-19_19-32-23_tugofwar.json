@@ -1,0 +1,129 @@
+{
+  "durationMinutes" : 0,
+  "endTime" : "2026-04-19T23:31:57Z",
+  "matchId" : "F98E6DF7-4462-4730-A24A-717916F8B5D6",
+  "players" : {
+    "player1" : {
+      "isWinner" : false,
+      "name" : "Player 1"
+    },
+    "player2" : {
+      "isWinner" : false,
+      "name" : "Player 2"
+    }
+  },
+  "pointEvents" : [
+    {
+      "gameScore" : 6,
+      "player1GamesWon" : 0,
+      "player1PointsWon" : 1,
+      "player2GamesWon" : 0,
+      "player2PointsWon" : 0,
+      "pointNumber" : 1,
+      "timestamp" : "2026-04-19T23:31:43Z"
+    },
+    {
+      "gameScore" : 7,
+      "player1GamesWon" : 0,
+      "player1PointsWon" : 2,
+      "player2GamesWon" : 0,
+      "player2PointsWon" : 0,
+      "pointNumber" : 2,
+      "timestamp" : "2026-04-19T23:31:44Z"
+    },
+    {
+      "gameScore" : 8,
+      "player1GamesWon" : 0,
+      "player1PointsWon" : 3,
+      "player2GamesWon" : 0,
+      "player2PointsWon" : 0,
+      "pointNumber" : 3,
+      "timestamp" : "2026-04-19T23:31:44Z"
+    },
+    {
+      "gameScore" : 9,
+      "player1GamesWon" : 0,
+      "player1PointsWon" : 4,
+      "player2GamesWon" : 0,
+      "player2PointsWon" : 0,
+      "pointNumber" : 4,
+      "timestamp" : "2026-04-19T23:31:45Z"
+    },
+    {
+      "gameScore" : 10,
+      "player1GamesWon" : 1,
+      "player1PointsWon" : 5,
+      "player2GamesWon" : 0,
+      "player2PointsWon" : 0,
+      "pointNumber" : 5,
+      "timestamp" : "2026-04-19T23:31:47Z"
+    },
+    {
+      "gameScore" : 4,
+      "player1GamesWon" : 1,
+      "player1PointsWon" : 5,
+      "player2GamesWon" : 0,
+      "player2PointsWon" : 1,
+      "pointNumber" : 6,
+      "timestamp" : "2026-04-19T23:31:55Z"
+    },
+    {
+      "gameScore" : 3,
+      "player1GamesWon" : 1,
+      "player1PointsWon" : 5,
+      "player2GamesWon" : 0,
+      "player2PointsWon" : 2,
+      "pointNumber" : 7,
+      "timestamp" : "2026-04-19T23:31:55Z"
+    },
+    {
+      "gameScore" : 2,
+      "player1GamesWon" : 1,
+      "player1PointsWon" : 5,
+      "player2GamesWon" : 0,
+      "player2PointsWon" : 3,
+      "pointNumber" : 8,
+      "timestamp" : "2026-04-19T23:31:55Z"
+    },
+    {
+      "gameScore" : 1,
+      "player1GamesWon" : 1,
+      "player1PointsWon" : 5,
+      "player2GamesWon" : 0,
+      "player2PointsWon" : 4,
+      "pointNumber" : 9,
+      "timestamp" : "2026-04-19T23:31:56Z"
+    },
+    {
+      "gameScore" : 0,
+      "player1GamesWon" : 1,
+      "player1PointsWon" : 5,
+      "player2GamesWon" : 1,
+      "player2PointsWon" : 5,
+      "pointNumber" : 10,
+      "timestamp" : "2026-04-19T23:31:57Z"
+    }
+  ],
+  "schemaVersion" : "1.0.0",
+  "scores" : {
+    "final" : "1-1",
+    "player1GamesWon" : 1,
+    "player2GamesWon" : 1
+  },
+  "sport" : "tugofwar",
+  "startTime" : "2026-04-19T23:31:39Z",
+  "stats" : {
+    "activeCaloriesBurned" : 0,
+    "player1" : {
+      "gamesWon" : 1,
+      "pointWinPercentage" : 0.5,
+      "totalPointsWon" : 5
+    },
+    "player2" : {
+      "gamesWon" : 1,
+      "pointWinPercentage" : 0.5,
+      "totalPointsWon" : 5
+    },
+    "totalPointsInMatch" : 10
+  }
+}
