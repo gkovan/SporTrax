@@ -340,6 +340,58 @@
     box-shadow: 0 18px 42px rgba(0, 0, 0, 0.3);
   }
 
+  .mini-game {
+    display: grid;
+    grid-template-columns: minmax(300px, 0.9fr) minmax(0, 1.1fr);
+    gap: 44px;
+    align-items: start;
+  }
+
+  .rules-list {
+    display: grid;
+    gap: 12px;
+    margin: 28px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .rules-list li {
+    padding: 16px 18px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel);
+    color: var(--muted);
+  }
+
+  .rules-list strong {
+    color: var(--text);
+  }
+
+  .mini-game-media {
+    display: grid;
+    grid-template-columns: minmax(0, 0.82fr) minmax(220px, 1.18fr);
+    gap: 16px;
+    align-items: start;
+  }
+
+  .mini-watch-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .mini-watch-grid img {
+    width: 100%;
+    border-radius: 22px;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.3);
+  }
+
+  .tall-preview img {
+    max-height: 560px;
+    object-fit: cover;
+    object-position: top;
+  }
+
   .screenshots {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -437,6 +489,8 @@
     .hero,
     .section-heading,
     .split,
+    .mini-game,
+    .mini-game-media,
     .privacy {
       grid-template-columns: 1fr;
     }
@@ -513,6 +567,10 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
+    .mini-watch-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .section {
       padding: 58px 0;
     }
@@ -547,6 +605,7 @@
       </a>
       <div class="nav-links">
         <a href="#watch">Apple Watch</a>
+        <a href="#mini-games">Mini games</a>
         <a href="#analytics">Analytics</a>
         <a href="#privacy">Privacy</a>
         <a class="app-store-link" href="https://apps.apple.com/us/app/sportrax-tennis-pickleball/id6744708010">App Store</a>
@@ -610,6 +669,10 @@
             <p>Log sessions when you are drilling, rallying, or just hitting around without a formal match.</p>
           </article>
           <article class="feature-card">
+            <h3>Mini games</h3>
+            <p>Play no-serve training games like Tug of War and save the result to your activity history.</p>
+          </article>
+          <article class="feature-card">
             <h3>Health context</h3>
             <p>Review heart-rate zones, calories, and time played when Apple Health permissions are enabled.</p>
           </article>
@@ -640,6 +703,37 @@
           <img src="active-images/release-1-6/apple-watch-images/tennis-match/04-tennis-match-analytics-1.png" alt="Tennis match analytics on Apple Watch" width="416" height="496" />
           <img src="active-images/release-1-6/apple-watch-images/pickleball-match/03-pickleball-bpm-cal-health.PNG" alt="Pickleball heart rate and calorie tracking on Apple Watch" width="324" height="394" />
           <img src="active-images/release-1-6/apple-watch-images/tennis-match/06-tennis-undo-point.png" alt="Undo point screen on Apple Watch" width="416" height="496" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="mini-games" aria-labelledby="mini-games-title">
+      <div class="section-inner mini-game">
+        <div class="split-copy">
+          <p class="eyebrow">Mini games for training days</p>
+          <h2 id="mini-games-title">Play Tug of War without serving.</h2>
+          <p>Tug of War is a fast Apple Watch mini game for rallies, drills, and competitive hitting sessions. It is great when you want points to matter but do not want the session to revolve around serving.</p>
+          <ul class="rules-list">
+            <li><strong>Start at 5.</strong> The shared score begins in the middle, with player 1 pulling toward 10 and player 2 pulling toward 0.</li>
+            <li><strong>Let the rally develop.</strong> The ball has to go over the net twice before a point can score.</li>
+            <li><strong>Move the score.</strong> Player 1 winning a point increments the score by 1. Player 2 winning a point decrements it by 1.</li>
+            <li><strong>Win by pulling all the way.</strong> Player 1 wins at 10. Player 2 wins at 0.</li>
+          </ul>
+        </div>
+        <div class="mini-game-media">
+          <div class="mini-watch-grid">
+            <img src="active-images/release-1-6/apple-watch-images/tug-of-war/01-tug-of-war-match.PNG" alt="Tug of War mini game scoring on Apple Watch" width="324" height="394" />
+            <img src="active-images/release-1-6/apple-watch-images/tug-of-war/02-tug-of-war-analytics.PNG" alt="Tug of War analytics on Apple Watch" width="324" height="394" />
+            <img src="active-images/release-1-6/apple-watch-images/tug-of-war/03-tug-of-war-undo-point.PNG" alt="Undo point in Tug of War on Apple Watch" width="324" height="394" />
+            <img src="active-images/release-1-6/apple-watch-images/tug-of-war/04-tug-of-war-bpm-cal.PNG" alt="Tug of War heart rate and calories on Apple Watch" width="324" height="394" />
+          </div>
+          <article class="iphone-panel tall-preview">
+            <img src="active-images/release-1-6/iphone-images/tug-of-war/01-tug-of-war-match-detail.jpeg" alt="Tug of War activity history and detail view on iPhone" width="1410" height="5392" />
+            <div>
+              <h3>Saved like every activity</h3>
+              <p>Tug of War sessions appear in iPhone history with details, duration, score movement, and activity context.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
