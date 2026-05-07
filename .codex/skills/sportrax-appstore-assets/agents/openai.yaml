@@ -1,0 +1,7 @@
+interface:
+  display_name: "SporTrax Store Assets"
+  short_description: "Manage screenshots and App Store assets"
+  brand_color: "#34C759"
+  default_prompt: "Use $sportrax-appstore-assets to organize the latest SporTrax screenshots for App Store submission."
+policy:
+  allow_implicit_invocation: true

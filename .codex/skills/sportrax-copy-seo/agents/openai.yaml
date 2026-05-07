@@ -1,0 +1,7 @@
+interface:
+  display_name: "SporTrax Copy SEO"
+  short_description: "Polish SporTrax product copy and SEO"
+  brand_color: "#FF9500"
+  default_prompt: "Use $sportrax-copy-seo to tighten the SporTrax homepage copy and SEO metadata."
+policy:
+  allow_implicit_invocation: true
