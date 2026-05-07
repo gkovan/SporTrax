@@ -329,11 +329,34 @@
 
   .watch-gallery {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 14px;
+    gap: 18px;
   }
 
-  .watch-gallery img {
+  .watch-sport-group {
+    padding: 18px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--panel);
+  }
+
+  .watch-sport-group h3 {
+    margin-bottom: 6px;
+    font-size: 1.16rem;
+  }
+
+  .watch-sport-group p {
+    margin-bottom: 16px;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+
+  .watch-image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .watch-image-grid img {
     width: 100%;
     border-radius: 24px;
     background: rgba(0, 0, 0, 0.24);
@@ -563,7 +586,7 @@
       grid-template-columns: repeat(2, 108px);
     }
 
-    .watch-gallery {
+    .watch-image-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -697,12 +720,26 @@
           </div>
         </div>
         <div class="watch-gallery">
-          <img src="active-images/release-1-6/apple-watch-images/01-app-main-screen.png" alt="SporTrax Apple Watch main menu" width="416" height="496" />
-          <img src="active-images/release-1-6/apple-watch-images/tennis-match/02-tennis-match-main-screen.png" alt="Tennis match scoring on Apple Watch" width="416" height="496" />
-          <img src="active-images/release-1-6/apple-watch-images/pickleball-match/01-pickleball-match.PNG" alt="Pickleball match scoring on Apple Watch" width="324" height="394" />
-          <img src="active-images/release-1-6/apple-watch-images/tennis-match/04-tennis-match-analytics-1.png" alt="Tennis match analytics on Apple Watch" width="416" height="496" />
-          <img src="active-images/release-1-6/apple-watch-images/pickleball-match/03-pickleball-bpm-cal-health.PNG" alt="Pickleball heart rate and calorie tracking on Apple Watch" width="324" height="394" />
-          <img src="active-images/release-1-6/apple-watch-images/tennis-match/06-tennis-undo-point.png" alt="Undo point screen on Apple Watch" width="416" height="496" />
+          <article class="watch-sport-group">
+            <h3>Tennis on Apple Watch</h3>
+            <p>Score matches, follow health context, review match analytics, and undo the last point quickly.</p>
+            <div class="watch-image-grid">
+              <img src="active-images/release-1-6/apple-watch-images/tennis-match/02-tennis-match-main-screen.png" alt="Tennis match scoring on Apple Watch" width="416" height="496" />
+              <img src="active-images/release-1-6/apple-watch-images/tennis-match/03-tennis-match-health-calorie-tracking.png" alt="Tennis heart rate and calorie tracking on Apple Watch" width="416" height="496" />
+              <img src="active-images/release-1-6/apple-watch-images/tennis-match/04-tennis-match-analytics-1.png" alt="Tennis match analytics on Apple Watch" width="416" height="496" />
+              <img src="active-images/release-1-6/apple-watch-images/tennis-match/06-tennis-undo-point.png" alt="Undo point for tennis match on Apple Watch" width="416" height="496" />
+            </div>
+          </article>
+          <article class="watch-sport-group">
+            <h3>Pickleball on Apple Watch</h3>
+            <p>Track pickleball points with dedicated scoring, analytics, health views, and undo support.</p>
+            <div class="watch-image-grid">
+              <img src="active-images/release-1-6/apple-watch-images/pickleball-match/01-pickleball-match.PNG" alt="Pickleball match scoring on Apple Watch" width="324" height="394" />
+              <img src="active-images/release-1-6/apple-watch-images/pickleball-match/02-pickleball-analytics.PNG" alt="Pickleball analytics on Apple Watch" width="324" height="394" />
+              <img src="active-images/release-1-6/apple-watch-images/pickleball-match/03-pickleball-bpm-cal-health.PNG" alt="Pickleball heart rate and calorie tracking on Apple Watch" width="324" height="394" />
+              <img src="active-images/release-1-6/apple-watch-images/pickleball-match/04-pickleball-undo-point.PNG" alt="Undo point for pickleball match on Apple Watch" width="324" height="394" />
+            </div>
+          </article>
         </div>
       </div>
     </section>
