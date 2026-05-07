@@ -1,0 +1,7 @@
+interface:
+  display_name: "SporTrax Static Web"
+  short_description: "Build and verify the SporTrax website"
+  brand_color: "#0A84FF"
+  default_prompt: "Use $sportrax-static-web to improve the SporTrax homepage and verify it on mobile and desktop."
+policy:
+  allow_implicit_invocation: true
