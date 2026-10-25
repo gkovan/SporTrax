@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="SporTrax is an Apple Watch-first tennis and pickleball tracker for scoring matches, tracking practice, reviewing analytics, and saving activity history on iPhone." />
+<meta name="description" content="Score tennis and pickleball on Apple Watch with SporTrax. Review time on court, sport summaries, match stats, and activity history on iPhone." />
 <meta name="theme-color" content="#07110d" />
 <meta property="og:title" content="SporTrax - Tennis and Pickleball Tracker" />
-<meta property="og:description" content="Score tennis and pickleball from Apple Watch, track practice, review match analytics, and keep your activity history on iPhone." />
-<meta property="og:image" content="active-images/release-1-6/app-store-images/2-Built-for-tennis-and-pickleball1284-2778.png" />
+<meta property="og:description" content="Score tennis and pickleball from Apple Watch. Explore redesigned Summary and Activity views on iPhone with time on court, sport stats, and session history." />
+<meta property="og:image" content="active-images/release-1-10/app-store-images/01-summary-time-on-court-1-out.png" />
 <link rel="icon" href="active-images/release-1-6/sportrax-logo.png" />
 <title>SporTrax - Tennis and Pickleball Tracker for Apple Watch</title>
 <style>
@@ -163,6 +163,23 @@
     font-size: clamp(1.08rem, 2vw, 1.32rem);
   }
 
+  .release-note {
+    display: inline-block;
+    max-width: 440px;
+    color: var(--green);
+    font-size: 0.95rem;
+    font-weight: 650;
+  }
+
+  .release-note:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+
+  .section[id] {
+    scroll-margin-top: 96px;
+  }
+
   .hero-actions {
     display: flex;
     flex-wrap: wrap;
@@ -186,7 +203,8 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 12px;
-    margin-top: 34px;
+    margin-top: 0;
+    grid-column: 1 / -1;
   }
 
   .fact {
@@ -217,7 +235,7 @@
   }
 
   .phone-showcase {
-    width: min(420px, 72vw);
+    width: min(320px, 72vw);
     border-radius: 34px;
     box-shadow: 0 34px 80px var(--shadow);
   }
@@ -417,12 +435,13 @@
 
   .screenshots {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 18px;
     overflow: hidden;
   }
 
   .screenshot-card {
+    margin: 0;
     border: 1px solid var(--line);
     border-radius: 8px;
     background: var(--panel);
@@ -439,11 +458,49 @@
     font-size: 0.95rem;
   }
 
-  .iphone-row {
+  .summary-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
-    align-items: start;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .screenshot-card figcaption strong {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--text);
+    font-size: 1.08rem;
+  }
+
+  .activity-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.8fr);
+    align-items: center;
+    gap: 72px;
+  }
+
+  .activity-image {
+    width: 100%;
+    max-width: 400px;
+    justify-self: center;
+    border-radius: 8px;
+  }
+
+  .activity-benefits {
+    padding: 0;
+    margin: 28px 0 0;
+    list-style: none;
+    color: var(--muted);
+  }
+
+  .activity-benefits li {
+    padding: 18px 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .activity-benefits strong {
+    color: var(--text);
   }
 
   .iphone-panel {
@@ -509,11 +566,17 @@
   }
 
   @media (max-width: 960px) {
+    .nav-links a[href="#mini-games"],
+    .nav-links a[href="#privacy"] {
+      display: none;
+    }
+
     .hero,
     .section-heading,
     .split,
     .mini-game,
     .mini-game-media,
+    .activity-layout,
     .privacy {
       grid-template-columns: 1fr;
     }
@@ -532,8 +595,8 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .iphone-row {
-      grid-template-columns: 1fr;
+    .activity-layout {
+      gap: 32px;
     }
   }
 
@@ -566,6 +629,7 @@
     .hero-facts,
     .feature-grid,
     .sport-tabs,
+    .summary-grid,
     .screenshots {
       grid-template-columns: 1fr;
     }
@@ -609,8 +673,9 @@
   "@type": "SoftwareApplication",
   "name": "SporTrax",
   "applicationCategory": "HealthApplication",
+  "softwareVersion": "1.10",
   "operatingSystem": "iOS, watchOS",
-  "description": "Apple Watch-first tennis and pickleball tracker for live scoring, practice tracking, match analytics, and iPhone activity history.",
+  "description": "Apple Watch-first tennis and pickleball tracker for live scoring, practice tracking, time-on-court summaries, match analytics, and iPhone activity history.",
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -629,7 +694,8 @@
       <div class="nav-links">
         <a href="#watch">Apple Watch</a>
         <a href="#mini-games">Mini games</a>
-        <a href="#analytics">Analytics</a>
+        <a href="#analytics">Summary</a>
+        <a href="#activity">Activity</a>
         <a href="#privacy">Privacy</a>
         <a class="app-store-link" href="https://apps.apple.com/us/app/sportrax-tennis-pickleball/id6744708010">App Store</a>
       </div>
@@ -641,33 +707,34 @@
       <div>
         <p class="eyebrow">Apple Watch scoring for tennis and pickleball</p>
         <h1 id="hero-title">SporTrax</h1>
-        <p class="hero-copy">Score matches from your wrist, track practice sessions, and review every activity on iPhone with clean stats, heart-rate context, and match history that stays out of your way while you play.</p>
+        <p class="hero-copy">Score tennis and pickleball matches from your wrist. Review your time on court, explore your stats, and revisit every session with redesigned Summary and Activity views on iPhone.</p>
+        <a class="release-note" href="#analytics">New in 1.10: Redesigned Summary and Activity views <span aria-hidden="true">&rarr;</span></a>
         <div class="hero-actions">
           <a class="badge" href="https://apps.apple.com/us/app/sportrax-tennis-pickleball/id6744708010" aria-label="Download SporTrax on the App Store">
             <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1748131200" alt="Download on the App Store" />
           </a>
           <a class="text-link" href="#features">Explore features</a>
         </div>
-        <div class="hero-facts" aria-label="SporTrax highlights">
-          <div class="fact">
-            <strong>Live scoring</strong>
-            <span>Points, games, sets, matches, and quick undo.</span>
-          </div>
-          <div class="fact">
-            <strong>Two sports</strong>
-            <span>Built for tennis and pickleball workflows.</span>
-          </div>
-          <div class="fact">
-            <strong>Private by design</strong>
-            <span>The App Store listing states no data is collected.</span>
-          </div>
-        </div>
       </div>
       <div class="hero-media" aria-label="SporTrax screenshots">
-        <img class="phone-showcase" src="active-images/release-1-6/app-store-images/2-Built-for-tennis-and-pickleball1284-2778.png" alt="SporTrax tennis and pickleball screenshots on iPhone and Apple Watch" width="1284" height="2778" />
+        <img class="phone-showcase" src="active-images/release-1-10/app-store-images/01-summary-time-on-court-1-out.png" alt="SporTrax 1.10 Summary showing total time on court, session count, and recorded calories" width="1206" height="2622" fetchpriority="high" />
         <div class="watch-stack" aria-hidden="true">
           <img src="active-images/release-1-6/apple-watch-images/tennis-match/02-tennis-match-main-screen.png" alt="" width="416" height="496" />
           <img src="active-images/release-1-6/apple-watch-images/pickleball-match/01-pickleball-match.PNG" alt="" width="324" height="394" />
+        </div>
+      </div>
+      <div class="hero-facts" aria-label="SporTrax highlights">
+        <div class="fact">
+          <strong>Live scoring</strong>
+          <span>Points, games, sets, matches, and quick undo.</span>
+        </div>
+        <div class="fact">
+          <strong>Two sports</strong>
+          <span>Built for tennis and pickleball workflows.</span>
+        </div>
+        <div class="fact">
+          <strong>Private by design</strong>
+          <span>The App Store listing states no data is collected.</span>
         </div>
       </div>
     </section>
@@ -778,57 +845,59 @@
     <section class="section" id="analytics" aria-labelledby="analytics-title">
       <div class="section-inner">
         <div class="section-heading">
-          <h2 id="analytics-title">Turn matches into history.</h2>
-          <p>After play, the iPhone app gives you summaries, match details, practice logs, and activity history so every session is easy to revisit.</p>
+          <div>
+            <p class="eyebrow">Redesigned Summary · Version 1.10</p>
+            <h2 id="analytics-title">See your time on court add up.</h2>
+          </div>
+          <p>Get the full picture of your play: total time on court, session counts, and recorded calories. Explore summaries for tennis, pickleball, Tug of War, and practice.</p>
         </div>
-        <div class="iphone-row">
-          <article class="iphone-panel">
-            <img src="active-images/release-1-6/iphone-images/summary/02-tennis-summary.png" alt="SporTrax iPhone summary view" width="1290" height="2796" />
-            <div>
-              <h3>Performance summary</h3>
-              <p>Review totals, win rates, and time played across your tennis activity.</p>
-            </div>
-          </article>
-          <article class="iphone-panel">
-            <img src="active-images/release-1-6/iphone-images/tennis/03-tennis-activity-match-detail.jpeg" alt="SporTrax iPhone tennis match detail view" />
-            <div>
-              <h3>Match detail</h3>
-              <p>See box score, set-by-set results, service stats, receiving stats, and break points.</p>
-            </div>
-          </article>
-          <article class="iphone-panel">
-            <img src="active-images/release-1-6/iphone-images/activity/01-activity-history.png" alt="SporTrax iPhone activity history view" />
-            <div>
-              <h3>Activity history</h3>
-              <p>Keep matches and practices organized in one chronological view.</p>
-            </div>
-          </article>
+        <div class="summary-grid">
+          <figure class="screenshot-card">
+            <img src="active-images/release-1-10/app-store-images/02-summary-time-on-court-2-out.png" alt="Summary chart showing monthly time on court throughout the year" width="1206" height="2622" loading="lazy" />
+            <figcaption><strong>Your play over time</strong>Review time on court by year, month, or day and see how your sessions add up.</figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <img src="active-images/release-1-10/app-store-images/03-summary-tennis-out.png" alt="Expanded tennis summary with match, set, point, break-point, service, and receiving results" width="1206" height="2622" loading="lazy" />
+            <figcaption><strong>A closer look at your sport</strong>Explore tennis results across matches, sets, points, break points, and service and receiving points.</figcaption>
+          </figure>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="activity" aria-labelledby="activity-title">
+      <div class="section-inner activity-layout">
+        <div class="split-copy">
+          <p class="eyebrow">Redesigned Activity · Version 1.10</p>
+          <h2 id="activity-title">Every session, easy to revisit.</h2>
+          <p>Browse your activity history with clearer session cards. Find a match, review the result, and keep your time on court in view.</p>
+          <ul class="activity-benefits">
+            <li><strong>Find your session.</strong> Browse all activities or filter by tennis, pickleball, or practice.</li>
+            <li><strong>See the result at a glance.</strong> Review player names, set scores, and match results alongside the session date.</li>
+            <li><strong>Keep the context.</strong> See duration and recorded calories, open activity details, and share full activity snapshots.</li>
+          </ul>
+        </div>
+        <img class="activity-image" src="active-images/release-1-10/app-store-images/05-activity-all-out.png" alt="Redesigned Activity page with sport filters and tennis session cards showing players, scores, dates, duration, and calories" width="1206" height="2622" loading="lazy" />
       </div>
     </section>
 
     <section class="section" aria-labelledby="screens-title">
       <div class="section-inner">
         <div class="section-heading">
-          <h2 id="screens-title">Ready for every session.</h2>
-          <p>The latest release adds stronger tennis and pickleball presentation, practice tracking, heart-rate zone views, and shareable activity history.</p>
+          <h2 id="screens-title">From the first point to the full story.</h2>
+          <p>Score live on Apple Watch, track practice and heart-rate context, then explore the details of each match on iPhone.</p>
         </div>
         <div class="screenshots">
           <figure class="screenshot-card">
-            <img src="active-images/release-1-6/app-store-images/1-Score-matches-live-on-apple-watch-1284-2778.png" alt="Score matches live on Apple Watch" width="1284" height="2778" />
+            <img src="active-images/release-1-6/app-store-images/1-Score-matches-live-on-apple-watch-1284-2778.png" alt="Score tennis matches live on Apple Watch" width="1284" height="2778" loading="lazy" />
             <figcaption>Score matches live on Apple Watch.</figcaption>
           </figure>
           <figure class="screenshot-card">
-            <img src="active-images/release-1-6/app-store-images/3-See-heart-rate-zones-1284-2778.png" alt="See heart-rate zones in SporTrax" width="1284" height="2778" />
-            <figcaption>See heart-rate zones and activity context.</figcaption>
+            <img src="active-images/release-1-6/app-store-images/3-See-heart-rate-zones-1284-2778.png" alt="Heart-rate zones and activity context in SporTrax" width="1284" height="2778" loading="lazy" />
+            <figcaption>Review heart-rate zones and activity context.</figcaption>
           </figure>
           <figure class="screenshot-card">
-            <img src="active-images/release-1-6/app-store-images/4-Dive-into-match-analytics-1284-2778.png" alt="Dive into match analytics in SporTrax" width="1284" height="2778" />
-            <figcaption>Dive into match analytics after play.</figcaption>
-          </figure>
-          <figure class="screenshot-card">
-            <img src="active-images/release-1-6/app-store-images/6-Save-and-share-activity-history-1284-2778.png" alt="Save and share activity history in SporTrax" width="1284" height="2778" />
-            <figcaption>Save and share your activity history.</figcaption>
+            <img src="active-images/release-1-6/app-store-images/4-Dive-into-match-analytics-1284-2778.png" alt="Detailed match analytics in SporTrax" width="1284" height="2778" loading="lazy" />
+            <figcaption>Explore match details, service stats, and receiving stats.</figcaption>
           </figure>
         </div>
       </div>
